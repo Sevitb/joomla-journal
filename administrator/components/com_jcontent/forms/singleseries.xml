@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details" label="JDETAILS">
+        <field 
+            name="title" 
+            type="text" 
+            label="JGLOBAL_TITLE" 
+            required="true" />
+        <field
+            name="alias"
+            type="text"
+            label="JFIELD_ALIAS_LABEL"
+            description="JFIELD_ALIAS_DESC"
+            hint="JFIELD_ALIAS_PLACEHOLDER" />
+        <field
+            name="id"
+            type="hidden"
+            label="Id" />
+        <field
+            name="state"
+            type="list"
+            label="JSTATUS"
+            class="form-select-color-state"
+            default="1"
+            validate="options">
+            <option value="1">Опубликована</option>
+            <option value="0">Не опубликована</option>
+        </field>
+        <field
+            name="canvas_image"
+            type="media"
+            label="Картинка страницы" />
+        <field
+            name="cover_image"
+            type="media"
+            label="Обложка серии" />
+        <field
+            name="intro_description"
+            type="textarea"
+            label="Краткое описание" />
+        <field
+            name="full_description"
+            type="textarea"
+            label="Полное описание"
+            required="true" />
+        <field
+            name="access"
+            type="accesslevel"
+            label="JFIELD_ACCESS_LABEL"
+            filter="UINT"
+            validate="options" />
+    </fieldset>
+</form>

@@ -1,0 +1,34 @@
+.content-section {
+    padding: calc($section-x-padding/2) 0;
+
+    &__main-column {
+        background-color: white;
+        box-shadow: $defaultBoxShadow;
+        padding: 1em;
+    }
+
+    &__asise-block{
+        background-color: white;
+        box-shadow: $defaultBoxShadow;
+    }
+
+    &__aside-column {
+    }
+
+    &__authors{
+        width: 100%;
+    }
+
+    &__author{
+
+    }
+
+    &__tools{
+        display: flex;
+        align-items: center;
+    }
+
+    &__tools > * + *{
+        margin-left: 1em;
+    }
+}

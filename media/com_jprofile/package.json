@@ -1,0 +1,14 @@
+{
+  "name": "com_jprofile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-profile": "sass --watch scss/pages/profile-page/profile-page.scss:css/profile-page.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.58.0"
+  }
+}

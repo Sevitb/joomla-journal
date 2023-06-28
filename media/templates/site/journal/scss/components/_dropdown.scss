@@ -1,0 +1,33 @@
+.dropdown {
+    &-toggle {}
+
+    &-menu {
+        border: unset;
+        border-radius: $defaultBorderRadius;
+        box-shadow: $smoothBoxShadow;
+
+    }
+
+    &-item {
+        transition: all 0.3s ease-in-out;
+        padding: unset;
+
+        a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: $black;
+        }
+
+        span[class^="icon-"] {
+            margin-right: 0.25em;
+        }
+
+        &:active {
+            a {
+                color: $blue;
+            }
+
+            background-color: #e9ecef;
+        }
+    }
+}

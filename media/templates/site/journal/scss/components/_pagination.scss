@@ -1,0 +1,16 @@
+.pagination__wrapper{
+    width: max-content;
+    margin: 0 auto;
+}
+
+.pagination{
+    margin: 0.5em 0 0 0 !important;
+    .page-item{
+        &.active{
+            .page-link{
+                background-color: $blue;
+                border-color: $blue;
+            }
+        }
+    }
+}

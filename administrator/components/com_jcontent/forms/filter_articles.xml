@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+
+        <field
+            name="search"
+            type="text"
+            inputmode="search"
+            label="Поиск статей"
+            hint="JSEARCH_FILTER" />
+
+        <field
+            name="state"
+            type="list"
+            label="JSTATUS"
+            statuses="0,1">
+                <option value="">-- Выберите значение --</option>
+                <option value="1">Опубликована</option>
+                <option value="0">Не опубликована</option>
+        </field>
+
+        <field
+            name="issue_id"
+            type="IssueId"
+            label="Выпуск"
+            addfieldprefix="Kima\Component\jcontent\Administrator\Field\Modal" />
+
+    </fields>
+
+    <fields name="list">
+
+        <field
+            name="limit"
+            type="limitbox"
+            label="JGLOBAL_LIST_LIMIT"
+            onchange="this.form.submit();" />
+
+    </fields>
+</form>

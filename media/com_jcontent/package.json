@@ -1,0 +1,15 @@
+{
+  "name": "com_jcontent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-series": "sass --watch scss/pages/series-page/series-page.scss:css/series-page.css",
+    "sass-article": "sass --watch scss/pages/article-page/article-page.scss:css/article-page.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}

@@ -1,0 +1,30 @@
+// Tools
+@import 'media/static/sass/tools/reset/reset';
+@import 'media/static/sass/tools/variables/variables';
+@import 'media/static/sass/tools/functions/functions';
+@import 'media/static/sass/tools/mixins/mixins';
+
+// Global
+@import 'components/global';
+
+// Joomla
+@import 'joomla/form';
+
+// Vendor
+
+//Pages
+@import 'pages/global/content-section';
+
+//Modules
+@import 'modules/nav';
+
+// Components
+@import 'components/header';
+@import 'components/messages';
+@import 'components/pagination';
+@import 'components/mobile-menu-icon';
+@import 'components/text-block';
+@import 'components/btn';
+@import 'components/loader';
+@import 'components/dropdown';
+@import 'components/footer';

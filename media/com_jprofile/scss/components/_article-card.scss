@@ -1,0 +1,63 @@
+.article-card {
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 0.3em;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $extraLightBlue;
+
+    }
+
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5em 0.8em;
+    }
+
+    &__state{
+
+        border-radius: 50%;
+        width: 1em;
+        aspect-ratio: 1;
+        background-color: $gray;
+        box-shadow: $defaultBoxShadow;
+
+        &-0{
+            background-color: $yellow;
+        }
+
+        &-1{
+            background-color: $green;
+        }
+
+        &-2{
+            background-color: $red;
+        }
+        
+        &-3{
+            background-color: $blue;
+        }
+    }
+
+    &__info {
+        & > * + *{
+            margin-top: 0.2em;
+        }
+    }
+
+    &__title {
+    }
+
+    &__authors {
+    }
+
+    &__stats {
+        margin-top: 0.8em;
+        & > * + *{
+            margin-top: 0.4em;
+        }
+    }
+    
+}
+

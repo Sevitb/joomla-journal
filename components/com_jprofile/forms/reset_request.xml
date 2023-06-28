@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="default" label="COM_JPROFILE_RESET_REQUEST_LABEL" description="COM_JPROFILE_RESET_REQUEST_DESC">
+		<field
+			name="password"
+			type="password"
+			label="COM_JPROFILE_FIELD_PASSWORD_RESET_LABEL"
+			required="true"
+			validate="password"
+		/>
+
+		<field
+			name="captcha"
+			type="captcha"
+			label="COM_USERS_CAPTCHA_LABEL"
+			validate="captcha"
+		/>
+	</fieldset>
+</form>

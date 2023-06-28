@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details" label="JDETAILS">
+        <field
+            name="title"
+            type="text"
+            label="JGLOBAL_TITLE"
+            required="true" />
+        <field
+            name="alias"
+            type="text"
+            label="JFIELD_ALIAS_LABEL"
+            description="JFIELD_ALIAS_DESC"
+            hint="JFIELD_ALIAS_PLACEHOLDER" />
+        <field
+            name="id"
+            type="hidden"
+            label="Id" />
+        <field
+            name="series_id"
+            type="modal_singleseries"
+            label="Серия"
+            clientid="1"
+            default="1"
+            required="true"
+            select="true"
+            new="true"
+            edit="true"
+            clear="true"
+        />
+        <field
+            name="issue_id"
+            type="modal_singleseries"
+            label="Выпуск"
+            clientid="1"
+            default="1"
+            required="true"
+            select="true"
+            new="true"
+            edit="true"
+            clear="true"
+        />
+        <field
+            name="section_id"
+            type="modal_singleseries"
+            label="Раздел"
+            clientid="1"
+            default="1"
+            required="true"
+            select="true"
+            new="true"
+            edit="true"
+            clear="true"
+        />
+        <field
+            name="pages"
+            type="text"
+            label="Страницы" />
+        <field
+            name="annotation"
+            type="textarea"
+            label="Аннотация" />
+        <field
+            name="literature"
+            type="textarea"
+            label="Список литературы" />
+        <field
+            name="quoting"
+            type="textarea"
+            label="Для цитирования" />
+        <field
+            name="files"
+            type="file"
+            label="Страницы" />
+        <field
+            name="state"
+            type="list"
+            label="JSTATUS"
+            class="form-select-color-state"
+            default="1"
+            validate="options">
+            <option value="1">Опубликована</option>
+            <option value="0">Не опубликована</option>
+        </field>
+        <fields name="params">
+            <fieldset name="options">
+                <fieldset name="basic">
+                    <field
+                        name="file"
+                        type="file"
+                        label="Файл (PDF)" />
+                </fieldset>
+            </fieldset>
+        </fields>
+
+
+        <field
+            name="access"
+            type="accesslevel"
+            label="JFIELD_ACCESS_LABEL"
+            filter="UINT"
+            validate="options" />
+    </fieldset>
+</form>

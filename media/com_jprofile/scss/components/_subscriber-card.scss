@@ -1,0 +1,31 @@
+.subscriber-card{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    & > * +*{
+        margin-left: 1rem;
+    }
+
+    &__user-info > *+*{
+        margin-top: 0.5rem;
+    }
+
+    &__name{
+        margin-bottom: 1rem;
+        a{
+            color: $black;
+        }
+    }
+
+    &__university, &__city, &__country{
+        color: $gray;
+    }
+
+    &__controls-btn{
+        margin-top: 1rem;
+        
+    }
+   
+}

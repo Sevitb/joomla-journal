@@ -1,0 +1,80 @@
+[class^="_icon-"], [class*=" _icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-bell {
+  &:before {
+    content: $_icon-bell; 
+  }
+}
+._icon-close {
+  &:before {
+    content: $_icon-close; 
+  }
+}
+._icon-fire {
+  &:before {
+    content: $_icon-fire;     
+    color: #f15802;
+  }
+}
+._icon-login {
+  &:before {
+    content: $_icon-login; 
+  }
+}
+._icon-mail {
+  &:before {
+    content: $_icon-mail;     
+    color: #40f102;
+  }
+}
+._icon-map-point {
+  &:before {
+    content: $_icon-map-point;     
+    color: #40f102;
+  }
+}
+._icon-phone {
+  &:before {
+    content: $_icon-phone;     
+    color: #40f102;
+  }
+}
+._icon-pencil {
+  &:before {
+    content: $_icon-pencil; 
+  }
+}
+._icon-image {
+  &:before {
+    content: $_icon-image; 
+  }
+}
+._icon-qrcode {
+  &:before {
+    content: $_icon-qrcode; 
+  }
+}
+._icon-cart {
+  &:before {
+    content: $_icon-cart; 
+  }
+}
+._icon-checkmark {
+  &:before {
+    content: $_icon-checkmark; 
+  }
+}
+

@@ -1,0 +1,64 @@
+.main {
+  padding: 1.2em 0;
+}
+
+.content-section {
+  padding: 1.25em 0;
+}
+.content-section__main-column {
+  background-color: white;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.05);
+  padding: 1em;
+}
+.content-section__asise-block {
+  background-color: white;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.05);
+}
+.content-section__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-section__title {
+  width: 100%;
+}
+
+.section-card > * + * {
+  margin-top: 1em;
+}
+.section-card > * + *:last-child {
+  margin-bottom: 1em;
+}
+.section-card__title-container {
+  background-color: #2D3E86;
+  padding: 0.7em 1em;
+}
+.section-card__title {
+  color: white;
+}
+
+.content-section {
+  padding: 1.25em 0;
+}
+.content-section__main-column {
+  background-color: white;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.05);
+  padding: 1em;
+}
+.content-section__asise-block {
+  background-color: white;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.05);
+}
+.content-section__authors {
+  width: 100%;
+}
+.content-section__tools {
+  display: flex;
+  align-items: center;
+}
+.content-section__tools > * + * {
+  margin-left: 1em;
+}
+
+/*# sourceMappingURL=article-page.css.map */

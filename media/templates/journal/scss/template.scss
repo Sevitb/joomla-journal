@@ -1,0 +1,28 @@
+// Tools
+@import 'tools/reset/reset';
+@import 'tools/variables/variables';
+@import 'tools/functions/functions';
+@import 'tools/mixins/mixins';
+
+// Global
+@import 'components/global';
+
+// Joomla
+@import 'joomla/form';
+
+// Vendor
+
+//Pages
+@import 'pages/global/content-section';
+
+//Modules
+@import 'modules/nav';
+
+// Components
+@import 'components/header';
+@import 'components/messages';
+@import 'components/pagination';
+@import 'components/mobile-menu-icon';
+@import 'components/text-block';
+@import 'components/btn';
+@import 'components/footer';

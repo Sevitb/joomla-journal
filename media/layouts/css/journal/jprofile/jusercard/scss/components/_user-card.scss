@@ -1,0 +1,53 @@
+.user-card {
+    background-color: white;
+    box-shadow: $defaultBoxShadow;
+    padding: 1.5em 2em;
+
+    &__row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        &>*+* {
+            margin-top: 1em;
+            margin-left: 1em;
+        }
+    }
+
+    &__avatar {
+        width: max(150px, 45%);
+        aspect-ratio: 1;
+        border-radius: 50%;
+        box-shadow: $defaultBoxShadow;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__avatar-image {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        height: 100%;
+    }
+
+    &__info {
+
+        &>*+* {
+            margin-top: 0.8em;
+        }
+    }
+
+    &__name {
+        margin-bottom: 0.5em;
+    }
+
+    &__group {
+        color: $gray;
+    }
+
+    &__post {}
+
+    &__city {}
+
+    &__email {}
+}

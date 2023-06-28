@@ -1,0 +1,17 @@
+.join-section {
+    padding: calc($section-x-padding/2) 0;
+    background-color: white;
+
+    &__row {
+        align-items: center;
+    }
+
+    &__image-container {
+    }
+
+    &__text-container {
+    }
+
+    &__title {
+    }
+}

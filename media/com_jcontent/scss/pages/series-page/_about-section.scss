@@ -1,0 +1,20 @@
+.about-section {
+    background-color: white;
+    padding: $section-x-padding 0;
+
+    &__row {
+        align-items: center;
+    }
+
+    &__text-container {
+    }
+
+    &__title {
+    }
+
+    &__image-container {
+        img{
+            width: 100%;
+        }
+    }
+}

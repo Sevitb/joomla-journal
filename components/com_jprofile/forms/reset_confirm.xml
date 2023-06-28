@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="default" label="COM_JPROFILE_RESET_CONFIRM_LABEL" description="COM_JPROFILE_RESET_CONFIRM_DESC">
+		<field
+			name="username"
+			type="text"
+			label="COM_JPROFILE_USERNAME"
+			filter="username"
+			required="true"
+			size="30"
+		/>
+
+		<field
+			name="token"
+			type="text"
+			label="COM_JPROFILE_FIELD_RESET_CONFIRM_TOKEN_LABEL"
+			filter="alnum"
+			required="true"
+			size="32"
+		/>
+	</fieldset>
+</form>

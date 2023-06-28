@@ -1,0 +1,44 @@
+.btn{
+    background-color: $blue;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    border: 0.1em solid transparent;
+
+    &:hover{
+        border-color: $blue;
+        background-color: $extraLightBlue;
+        color: $blue;
+    }
+
+    &:focus{
+        box-shadow: none;
+    }
+
+    &-primary{
+
+        &:focus{
+            background-color: $extraLightBlue;
+            border-color: $blue;
+            color: $blue;
+        }
+    }
+
+    &-white{
+        background-color: $extraLightBlue;
+        color: $black;
+
+        &:hover{
+            border-color: $blue;
+            color: $blue;
+        }
+    }
+
+    &-danger{
+        background-color: $red;
+
+        &:hover{
+            border-color: $red;
+            color: $red;
+        }
+    }
+}

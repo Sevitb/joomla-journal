@@ -1,0 +1,10 @@
+.content-section{
+    &__body{
+        a{
+            color: $black;
+        }
+    }
+    &__body > * + *{
+        margin-top: 1em;
+    }
+}

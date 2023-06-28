@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <field
+        name="id"
+        type="hidden"
+        label="Id" />
+    <fieldset name="general">
+        <field
+            name="avatar_image"
+            type="file"
+            description="COM_JPROFILE_AVATAR_INPUT"
+            accept="image/*"
+            label="COM_JPROFILE_AVATAR" />
+
+        <field
+            name="email"
+            type="text"
+            label="Email" />
+
+        <field
+            name="show_email"
+            type="checkbox"
+            label="COM_JPROFILE_SHOW_EMAIL" />
+
+        <field
+            name="username"
+            type="text"
+            description="COM_JPROFILE_USERNAME_INPUT"
+            label="COM_JPROFILE_USERNAME" />
+
+        <field
+            name="secondname"
+            type="text"
+            label="COM_JPROFILE_SECONDNAME" />
+
+        <field
+            name="firstname"
+            type="text"
+            label="COM_JPROFILE_FIRSTNAME" />
+
+        <field
+            name="name"
+            type="hidden" />
+
+        <field
+            name="thirdname"
+            type="text"
+            label="COM_JPROFILE_THIRDNAME" />
+    </fieldset>
+    <fieldset name="details">
+        <field
+            name="region"
+            type="listSearchAjax"
+            description="COM_JPROFILE_REGION_INPUT"
+            label="COM_JPROFILE_REGION"
+            addfieldprefix="Kima\Component\jprofile\Administrator\Field">
+        </field>
+
+        <field
+            name="city"
+            type="listSearchAjax"
+            description="COM_JPROFILE_CITY_INPUT"
+            label="COM_JPROFILE_CITY"
+            addfieldprefix="Kima\Component\jprofile\Administrator\Field">
+        </field>
+
+        <field
+            name="country"
+            type="listSearch"
+            description="COM_JPROFILE_COUNTRY_INPUT"
+            label="COM_JPROFILE_COUNTRY" />
+
+        <field
+            name="brief_bio"
+            type="textarea"
+            label="COM_JPROFILE_BRIEF_BIO" />
+
+        <field
+            name="awards"
+            type="textarea"
+            label="COM_JPROFILE_AWARDS" />
+    </fieldset>
+    <fieldset name="author-info">
+        <field
+            name="academic_degree"
+            type="text"
+            description="COM_JPROFILE_ACADEMIC_DEGREE_INPUT"
+            label="COM_JPROFILE_ACADEMIC_DEGREE" />
+
+        <field
+            name="academic_title"
+            type="text"
+            description="COM_JPROFILE_ACADEMIC_TITLE_INPUT"
+            label="COM_JPROFILE_ACADEMIC_TITLE" />
+
+        <field
+            name="education"
+            type="text"
+            label="COM_JPROFILE_EDUCATION" />
+
+        <field
+            name="organization"
+            type="listSearchAjax"
+            label="COM_JPROFILE_ORGANIZATION" 
+            addfieldprefix="Kima\Component\jprofile\Administrator\Field" />
+
+        <field
+            name="division"
+            type="textarea"
+            label="COM_JPROFILE_DIVISION" />
+
+        <field
+            name="post"
+            type="text"
+            label="COM_JPROFILE_POST" >
+        </field>
+    </fieldset>
+</form>

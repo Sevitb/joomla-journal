@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Single Series">
+        <message>Display a single series page.</message>
+    </layout>
+    <fields name="request">
+        <fieldset name="request"
+        addfieldprefix="Kima\Component\jcontent\Administrator\Field">        
+            <field
+				name="id"
+				type="modal_singleseries"
+				label="Выбрать серию"
+				required="true"
+				select="true"
+				new="true"
+				edit="true"
+				clear="true"
+			/>           
+        </fieldset>
+    </fields>
+</metadata>

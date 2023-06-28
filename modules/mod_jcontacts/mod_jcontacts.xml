@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" client="site" method="upgrade">
+    <name>Jcontacts</name>
+    <creationDate>11.11.2022</creationDate>
+    <author>KIMA</author>
+    <authorEmail>peskovatzkov.vs@gmail.com</authorEmail>
+    <copyright>All rights recived</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>1.0</version>
+    <description>Модуль для вывода контактных данных.</description>
+    <namespace path="src">Joomla\Module\Jcontacts</namespace>
+    <files>
+        <folder module="mod_jcontacts">src</folder>
+        <filename>mod_jcontacts.php</filename>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+        <filename>mod_jcontacts.xml</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="organization_title"
+                    type="text"
+                    label="Полное название организации"
+                />
+                <field
+                    name="organization_desc"
+                    type="textarea"
+                    label="Полное описание организации"
+                />
+                <field
+                    name="adress"
+                    type="text"
+                    label="Адрес организации"
+                />
+                <field
+                    name="phone"
+                    type="text"
+                    label="Телефон"
+                />
+                <field
+                    name="email"
+                    type="text"
+                    label="Email"
+                />
+                <field
+                    name="working_hours"
+                    type="text"
+                    label="Режим работы"
+                />
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    class="form-select"
+                    validate="moduleLayout"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

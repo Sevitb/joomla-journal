@@ -1,0 +1,28 @@
+.content-section {
+    padding: calc($section-x-padding/2) 0;
+
+    &__main-column {
+        background-color: white;
+        box-shadow: $defaultBoxShadow;
+        padding: 1em;
+    }
+
+    &__asise-block{
+        background-color: white;
+        box-shadow: $defaultBoxShadow;
+    }
+
+    &__aside-column {
+    }
+
+    &__header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title{
+        width: 100%;
+    }
+}

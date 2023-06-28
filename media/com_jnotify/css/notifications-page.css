@@ -1,0 +1,39 @@
+.datetime {
+  color: #A5A5A5;
+}
+
+.notification-card {
+  display: flex;
+  align-items: center;
+  padding: 0.8em;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+.notification-card > * + * {
+  margin-left: 0.8em;
+}
+.notification-card:hover {
+  background-color: #F7F8FC;
+}
+.notification-card__state-indicator {
+  background-color: #DF5147;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 59px 11px rgba(223, 81, 71, 0.2);
+}
+.notification-card__subject {
+  margin-bottom: 0.2em;
+}
+.notification-card__control-buttons {
+  margin: 0 0 0 auto;
+}
+.content-section__body a {
+  color: #333333;
+}
+.content-section__body > * + * {
+  margin-top: 1em;
+}
+
+/*# sourceMappingURL=notifications-page.css.map */

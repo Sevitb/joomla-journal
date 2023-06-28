@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+    <name>JProfile</name>
+    <author>Kima</author>
+    <creationDate>February 2023</creationDate>
+    <copyright>Copyright (C) 2023 Kima, all rights reserved</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>peskovatzkov.vs@gmail.com</authorEmail>
+    <authorUrl>www.kima.com</authorUrl>
+    <version>1.0.0</version>
+    <description>Компонент профиля.</description>
+    <namespace path="src">Kima\Component\jprofile</namespace>
+
+    <files folder="site">
+        <folder>forms</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+    
+    <languages>
+        <language tag="ru-RU">language/ru-RU/com_jprofile.ini</language>
+        <language tag="en-GB">language/en-GB/com_jprofile.ini</language>
+    </languages>
+
+    <administration>
+        <files folder="admin">
+            <folder>forms</folder>
+            <folder>services</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+        </files>
+
+        <media destination="com_jprofile" folder="media">
+            <folder>js</folder>
+            <folder>css</folder>
+            <folder>scss</folder>
+        </media>
+    </administration>
+
+</extension>

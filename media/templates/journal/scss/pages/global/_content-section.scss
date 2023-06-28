@@ -1,0 +1,67 @@
+.content-section {
+    padding: calc($section-x-padding/2) 0;
+
+    &__main-column {
+        background-color: white;
+        box-shadow: $defaultBoxShadow;
+        padding: 1em;
+    }
+
+    &__asise-block{
+        background-color: white;
+        box-shadow: $defaultBoxShadow;
+    }
+
+    &__aside-column > * + * {
+        margin-top: 1em;
+    }
+
+    &__aside-column {
+    }
+
+    &__header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title{
+        width: 100%;
+    }
+
+    &__points-list-container{
+        margin-bottom: 1.5em;
+    }
+
+    &__points-list{
+
+    }
+    &__points-list-item{
+        background-color: $extraLightBlue;
+
+        transition: background-color 0.3s ease-in-out;
+        &:hover{
+            background-color: $blue;
+        }
+    }
+
+    &__points-link{
+        display: block;
+        border: 0.1em solid white;
+        color: $black;
+        padding: 0.4em 0.5em;
+        transition: color 0.2s ease-in-out;
+        &:hover{
+            color: white;
+        }
+    }
+}
+
+@media (max-width: $l){
+    .content-section {
+        &__aside-column > *  {
+            margin-top: 1em;
+        }
+    }
+}

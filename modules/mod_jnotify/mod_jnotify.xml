@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" client="site" method="upgrade">
+    <name>JNotify</name>
+    <creationDate>11.11.2022</creationDate>
+    <author>KIMA</author>
+    <authorEmail>peskovatzkov.vs@gmail.com</authorEmail>
+    <copyright>All rights recived</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>1.0</version>
+    <description>Модуль для вывода оповещений.</description>
+    <namespace path="src">Joomla\Module\Jnotify</namespace>
+    <files>
+        <filename module="mod_jnotify">mod_jnotify.php</filename>
+        <folder>tmpl</folder>
+        <folder>src</folder>
+        <filename>mod_jnotify.xml</filename>
+    </files>
+    <media destination="mod_jnotify" folder="media">
+		<folder>js</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+	</media>
+</extension>

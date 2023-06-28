@@ -1,0 +1,16 @@
+{
+  "name": "com_jnotify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-notifications": "sass --watch scss/pages/notifications-page/notifications-page.scss:css/notifications-page.css",
+    "sass-notification": "sass --watch scss/pages/notification-page/notification-page.scss:css/notification-page.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}

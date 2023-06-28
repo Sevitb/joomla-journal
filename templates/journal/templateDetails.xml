@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="template" client="site">
+	<name>journal</name>
+	<version>1.0</version>
+	<creationDate>2022-10</creationDate>
+	<author>Kima</author>
+	<authorEmail>peskovatzkov.vs@gmail.com</authorEmail>
+	<copyright>(C) 2017 Open Source Matters, Inc.</copyright>
+	<description>Шаблон для сайта журнала "Вестинк консорциума"</description>
+	<inheritable>1</inheritable>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<!-- <filename>joomla.asset.json</filename> -->
+		<filename>offline.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>html</folder>
+	</files>
+	<media destination="templates/site/journal" folder="media">
+		<folder>js</folder>
+		<folder>css</folder>
+		<folder>scss</folder>
+		<folder>images</folder>
+	</media>
+	<positions>
+		<position>main-navbar</position>
+		<position>sidebar-right</position>
+		<position>sidebar-left</position>
+		<position>breadcrumbs</position>
+		<position>notifications</position>
+		<position>profile-navbar</position>
+		<position>contacts-mail-module</position>
+		<position>contacts-info-module</position>
+		<position>footer-contacts-info-module</position>
+		<position>contacts-map-module</position>
+		<position>login</position>
+	</positions>
+	<!-- <languages folder="language">
+		<language tag="en-GB">en-GB/tpl_journal.ini</language>
+		<language tag="en-GB">en-GB/tpl_journal.sys.ini</language>
+	</languages> -->
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field
+					name="logoFile"
+					type="media"
+					default=""
+					label="Логотип"
+					showon="brand:1"
+				/>
+
+				<field
+					name="siteTitle"
+					type="text"
+					default=""
+					label="Название"
+					filter="string"
+					showon="brand:1"
+				/>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

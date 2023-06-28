@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Single issue">
+        <message>Display a single issue page.</message>
+    </layout>
+    <fields name="request">
+        <fieldset name="request"
+        addfieldprefix="Kima\Component\jcontent\Administrator\Field">        
+            <!-- <field
+				name="id"
+				type="modal_issue"
+				label="Выбрать выпуск"
+				required="true"
+				select="true"
+				new="true"
+				edit="true"
+				clear="true"
+			/>            -->
+        </fieldset>
+    </fields>
+</metadata>

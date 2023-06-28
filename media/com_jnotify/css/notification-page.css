@@ -1,0 +1,12 @@
+.datetime {
+  color: #A5A5A5;
+}
+
+.content-section__body a {
+  color: #333333;
+}
+.content-section__body > * + * {
+  margin-top: 1em;
+}
+
+/*# sourceMappingURL=notification-page.css.map */

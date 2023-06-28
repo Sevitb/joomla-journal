@@ -1,0 +1,51 @@
+.article-card {
+
+    &::after {
+        content: '';
+        display: block;
+        background-color: $extraLightBlue;
+        height: 0.1em;
+        width: 50%;
+        margin: 0.9em auto 0 auto;
+    }
+
+    &:last-child {
+        &::after {
+            display: none;
+        }
+    }
+
+    &>*+* {
+        margin-top: 1em;
+    }
+
+    &__header {}
+
+    &__header>*+* {
+        margin-bottom: 0.2em;
+    }
+
+    &__title {
+        margin-bottom: 0.2em;
+    }
+
+    &__authors {}
+
+    &__author-name {}
+
+    &__statistic {}
+
+    &__statistic > * + * {
+        margin-top: 0.3em;
+    }
+
+    &__hits {}
+
+    &__page-count {}
+
+    &__annotation {}
+
+    &__annotation-title {
+        margin-bottom: 0.3em;
+    }
+}

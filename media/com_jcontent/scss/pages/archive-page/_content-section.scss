@@ -1,0 +1,26 @@
+.content-section {
+
+    &__main-column {
+        background-color: white;
+        box-shadow: $defaultBoxShadow;
+        padding: 1em;
+    }
+
+    &__asise-block{
+        background-color: white;
+        box-shadow: $defaultBoxShadow;
+    }
+
+    &__sections > * + *{
+        margin-top: 1em;
+    }
+
+    &__tools{
+        display: flex;
+        align-items: center;
+    }
+
+    &__tools > * + *{
+        margin-left: 1em;
+    }
+}

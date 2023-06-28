@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="user" method="upgrade">
+	<name>Juser</name>
+	<author>Kima</author>
+	<creationDate>November 2005</creationDate>
+	<copyright>Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>peskovatzkov.vs@gmail.com</authorEmail>
+	<authorUrl>www.kima.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Плагин для создания записей о пользоватлелях в дополнительных таблицах.</description>
+	<files>
+		<filename plugin="juser">juser.php</filename>
+	</files>
+
+</extension>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="library" method="upgrade">
+    <name>JNotify</name>
+    <author>Kima</author>
+    <creationDate>January 2023</creationDate>
+    <copyright>Copyright (C) 2023 Kima, all rights reserved</copyright>
+    <license>GNU General Public License version 2 or later;</license>
+    <authorEmail>peskovatzkov.vs@gmail.com</authorEmail>
+    <authorUrl>www.kima.com</authorUrl>
+    <version>1.0.0</version>
+    <description>Вспомогательная библиотека для компонента уведомлений.</description>
+    <libraryname>jnotify</libraryname>
+    <namespace path="src">jnotify\Library</namespace>
+
+    <files>
+        <folder>src</folder>
+        <filename>jnotify.xml</filename>
+    </files>
+
+</extension>

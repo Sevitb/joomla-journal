@@ -1,0 +1,99 @@
+.tab-pane{
+    position: relative;
+}
+.tabs {
+
+    &__header {
+        width: max-content;
+        &_v{
+            width: 100%;
+        }
+    }
+
+    &__list {
+        &_v{
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        cursor: pointer;
+    }
+
+    &__icon {
+        display: none;
+    }
+
+    &__title {
+        border: unset !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+
+        color: $backgroundBlack !important;
+
+        &.active, &:hover{
+            border-bottom: 0.2em solid $blue !important;
+            border-top: unset !important;
+            border-right: unset !important;
+            border-left: unset !important;
+            margin: 0 !important;
+            color: $black !important;
+        }
+        &:active{
+            border-top: unset !important;
+            border-right: unset !important;
+            border-left: unset !important;
+            margin: 0 !important;
+            color: $black !important;
+        }
+
+        &_v{
+            border-right: 0.2em solid transparent !important;
+            &.active, &:hover{
+                border-bottom: unset !important;
+                border-top: unset !important;
+                border-right: 0.2em solid $blue !important;
+                border-left: unset !important;
+                margin: 0 !important;
+                color: $black !important;
+            }
+            &:active{
+                border-top: unset !important;
+                border-right: 0.2em solid $blue !important;
+                border-left: unset !important;
+                margin: 0 !important;
+                color: $black !important;
+            }
+        }
+    }
+
+    &__body {
+    } 
+
+    &__content-item {
+    }
+
+    &__content-item > * + * {
+        margin-top: 1em;
+    }  
+
+    &__tab-item {
+        box-shadow: $defaultBoxShadow;
+        background-color: white;
+
+        &_brief-bio {
+        }
+
+        &_publications {
+        }
+
+        &_affiliation {
+        }
+
+        &_education {
+        }
+
+        &_awards {
+        }
+    }
+}

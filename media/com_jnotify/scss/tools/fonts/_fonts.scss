@@ -1,0 +1,30 @@
+// // Montserrat
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/layouts/fonts/Montserrat/Montserrat-VariableFont_wght.ttf'),
+        url('/layouts/fonts/Montserrat/Montserrat-VariableFont_wght.eot'),
+        url('/layouts/fonts/Montserrat/Montserrat-VariableFont_wght.woff'),
+        url('/layouts/fonts/Montserrat/Montserrat-VariableFont_wght.woff2');
+}
+
+// // Karla
+@font-face {
+    font-family: 'Roboto Flex';
+    src: url('/layouts/fonts/RobotoFlex/RobotoFlex-VariableFont.ttf'),
+        url('/layouts/fonts/RobotoFlex/RobotoFlex-VariableFont.eot'),
+        url('/layouts/fonts/RobotoFlex/RobotoFlex-VariableFont.woff'),
+        url('/layouts/fonts/RobotoFlex/RobotoFlex-VariableFont.woff2');
+}
+
+// // Icons
+@font-face {
+    font-family: '#{$icomoon-font-family}';
+    src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?vl29ap');
+    src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?vl29ap#iefix') format('embedded-opentype'),
+      url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?vl29ap') format('truetype'),
+      url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?vl29ap') format('woff'),
+      url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?vl29ap##{$icomoon-font-family}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }

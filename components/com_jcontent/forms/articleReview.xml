@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details" label="JDETAILS">
+        <field
+            name="state"
+            type="list"
+            label="JSTATUS"
+            required="true">
+                <option value="">-- Выберите значение --</option>
+                <option value="2">Принять</option>
+                <option value="3">Принять с исправлениями</option>
+                <option value="5">Отклонить</option>
+        </field>
+
+        <field
+            name="reviewer_comment"
+            type="textarea"
+            label="TPL_REVIEWER_COMMENT"/>
+    </fieldset>
+</form>

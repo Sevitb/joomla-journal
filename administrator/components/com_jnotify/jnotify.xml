@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+    <name>JNotify</name>
+    <author>Kima</author>
+    <creationDate>January 2023</creationDate>
+    <copyright>Copyright (C) 2022 Kima, all rights reserved</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>peskovatzkov.vs@gmail.com</authorEmail>
+    <authorUrl>www.kima.com</authorUrl>
+    <version>1.0.0</version>
+    <description>Компонент для уведомлений.</description>
+    <namespace path="src">Kima\Component\jnotify</namespace>
+
+    <files folder="site">
+        <folder>forms</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+
+    <administration>
+        <menu link="option=com_jnotify">Система оповещений</menu>
+        <files folder="admin">
+            <folder>forms</folder>
+            <folder>services</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+        </files>
+		
+		<media destination="com_jnotify" folder="media">
+			<folder>js</folder>
+			<folder>css</folder>
+			<folder>scss</folder>
+		</media>
+    </administration>
+
+</extension>

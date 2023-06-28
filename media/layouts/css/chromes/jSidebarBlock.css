@@ -1,0 +1,16 @@
+.sidebar-block{
+    
+}
+
+.sidebar-block__header{
+    text-align: center;
+    padding: 0.9em 0.9em 0 0.9em;
+}
+
+.sidebar-block__title{
+    font-weight: 400;
+}
+
+.sidebar-block__body{
+    padding: 0 0.9em 0.9em 0.9em;
+}

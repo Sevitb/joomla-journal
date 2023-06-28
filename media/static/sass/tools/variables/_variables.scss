@@ -1,0 +1,68 @@
+// icons
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "/layouts/fonts/Icons" !default;
+
+$_icon-bell: "\e900";
+$_icon-close: "\e901";
+$_icon-fire: "\e902";
+$_icon-login: "\e903";
+$_icon-mail: "\e904";
+$_icon-map-point: "\e905";
+$_icon-phone: "\e906";
+$_icon-pencil: "\e907";
+$_icon-image: "\e90d";
+$_icon-qrcode: "\e938";
+$_icon-cart: "\e93a";
+$_icon-checkmark: "\ea10";
+
+
+// Colors
+$blue: #2D3E86;
+$black: #333333;
+$green: #3bb739;
+$gray: #A5A5A5;
+$red: #DF5147;
+$yellow: #FAEA30;
+$lightPurple: #E496CD;
+
+$lightGray: #d8d8d8;
+$lightBlue: #4157b8;
+
+$mediumLightBlue: #435fdc;
+
+$extraLightBlue: #F7F8FC;
+$extraLightGray: #e6e6e6;
+
+$backgroundBlack: #555356;
+
+$BackgroundGradient_Green: linear-gradient(82.48deg, #40F102 -6.21%, #02B9F1 196.11%);
+$BackgroundGradient_Light: linear-gradient(360deg, #F4F9FB 0%, #F5FBF4 100%);
+$BackgroundGradient_Blue: linear-gradient(35.72deg, #9AFD77 0.02%, #16C7FD 118.34%);
+
+// Sizes 
+$xxl: 1920px;
+$xl: 1200px;
+$l: 992px;
+$m: 768px;
+$s: 540px;
+$xs: 480px;
+
+// Shadows
+$defaultBoxShadow: 2px 4px 4px rgba(0, 0, 0, 0.05);
+$smoothBoxShadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.1);
+
+// Borders
+$defaultBlockBorderRadius: 0.4em;
+$defaultBorderRadius: 0.2em;
+
+// Paddings
+$mainTagPadding: 1.2em;
+
+$section-x-padding: 2.5em;
+
+// Margins
+$section-title-margin: 1em;
+
+// Fonts
+$Helvetica: 'Helvetica';
+$SF_mono: 'SF mono';

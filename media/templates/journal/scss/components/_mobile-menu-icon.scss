@@ -1,0 +1,109 @@
+.mobile-menu-icon {
+  z-index: 100;
+  display: none;
+}
+
+@media (max-width: $m) {
+  .mobile-menu-icon {
+    display: block;
+    position: relative;
+    width: 32px;
+    height: 55px;
+    transition-duration: 0.5s;
+
+    &__icon-left {
+      transition-duration: 0.5s;
+      position: absolute;
+      height: 4px;
+      width: 15px;
+      top: 30px;
+      background-color: $black;
+
+      &:before {
+        transition-duration: 0.5s;
+        position: absolute;
+        width: 15px;
+        height: 4px;
+        background-color: $black;
+        content: "";
+        top: -10px;
+      }
+
+      &:after {
+        transition-duration: 0.5s;
+        position: absolute;
+        width: 15px;
+        height: 4px;
+        background-color: $black;
+        content: "";
+        top: 10px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__icon-right {
+      transition-duration: 0.5s;
+      position: absolute;
+      height: 4px;
+      width: 15px;
+      top: 30px;
+      background-color: $black;
+      left: 15px;
+
+      &:before {
+        transition-duration: 0.5s;
+        position: absolute;
+        width: 15px;
+        height: 4px;
+        background-color: $black;
+        content: "";
+        top: -10px;
+      }
+
+      &:after {
+        transition-duration: 0.5s;
+        position: absolute;
+        width: 15px;
+        height: 4px;
+        background-color: $black;
+        content: "";
+        top: 10px;
+      }
+    }
+
+    &.open {
+      .mobile-menu-icon__icon-left {
+        transition-duration: 0.5s;
+        background: transparent;
+
+        &:before {
+          transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+        }
+
+        &:after {
+          transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+        }
+      }
+
+      .mobile-menu-icon__icon-right {
+        transition-duration: 0.5s;
+        background: transparent;
+
+        &:before {
+          transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+        }
+
+        &:after {
+          transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+        }
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

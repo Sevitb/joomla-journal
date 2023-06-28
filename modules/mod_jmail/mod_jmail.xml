@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" client="site" method="upgrade">
+    <name>JMail</name>
+    <creationDate>11.11.2022</creationDate>
+    <author>KIMA</author>
+    <authorEmail>peskovatzkov.vs@gmail.com</authorEmail>
+    <copyright>All rights recived</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>1.0</version>
+    <description>Модуль для отправки писем.</description>
+    <namespace path="src">Joomla\Module\Jmail</namespace>
+    <files>
+        <folder module="mod_jmail">src</folder>
+        <filename>mod_jmail.php</filename>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+        <filename>mod_jmail.xml</filename>
+    </files>
+</extension>

@@ -1,0 +1,20 @@
+.content-section {
+
+    &__main-column {
+        background-color: white;
+        box-shadow: $defaultBoxShadow;
+        padding: 1em;
+    }
+
+    &__asise-block{
+        background-color: white;
+        box-shadow: $defaultBoxShadow;
+    }
+
+    &__aside-column {
+    }
+
+    &__issue-info-container{
+        height: max-content;
+    }
+}

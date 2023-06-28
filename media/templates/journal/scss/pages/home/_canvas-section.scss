@@ -1,0 +1,38 @@
+.canvas-section {
+    padding: calc($section-x-padding/2) 0;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 89vh;
+    display: grid;
+    place-items: center;
+
+    &__block {
+
+    }
+
+    &__title {
+        margin-bottom: 0.4em;
+
+        &_bottom {
+            color: white;
+            background-color: $blue;
+        }
+    }
+
+    &__body {
+    }
+
+    &__subtitle {
+        margin-bottom: 2em;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: $m){
+    .canvas-section {
+        height: max-content;
+    }
+}

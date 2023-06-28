@@ -1,0 +1,28 @@
+@import 'media/static/sass/tools/variables/variables';
+
+.user-avatar {
+    width: max(150px, 45%);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow: $defaultBoxShadow;
+    overflow: hidden;
+    position: relative;
+
+
+    &_large {}
+
+    &_middle {
+        width: 8rem;
+    }
+
+    &_small {
+        width: 2.9rem;
+    }
+
+    &__image {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        height: 100%;
+    }
+}

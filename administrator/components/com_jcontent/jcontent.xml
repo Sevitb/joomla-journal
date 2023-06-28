@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+    <name>JContent</name>
+    <author>Kima</author>
+    <creationDate>September 2022</creationDate>
+    <copyright>Copyright (C) 2022 Kima, all rights reserved</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>peskovatzkov.vs@gmail.com</authorEmail>
+    <authorUrl>www.kima.com</authorUrl>
+    <version>1.0.0</version>
+    <description>Компонент для создания и модерирования материалов в журнале "Вестник Консорциума".</description>
+    <namespace path="src/">Kima\Component\jcontent</namespace>
+
+    <files folder="site">
+        <folder>forms</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+
+    <administration>
+        <menu link="option=com_jcontent">Материалы журнала</menu>
+        <!-- <submenu>
+            <menu
+				view="dashboard"
+				alt="Jcontent/Dashboard"
+				>
+				Материалы журнала
+			</menu>
+			<menu
+				view="series"
+				alt="Jcontent/Series"
+				>
+				Серии
+			</menu>
+			<menu
+				view="issues"
+				alt="Jcontent/Issues"
+				>
+				Выпуски
+			</menu>
+			<menu
+				view="articles"
+				alt="Jcontent/Articles"
+				>
+				Статьи
+			</menu>
+		</submenu> -->
+        <files folder="admin">
+            <folder>forms</folder>
+            <folder>services</folder>
+            <folder>sql</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+        </files>
+    </administration>
+
+</extension>

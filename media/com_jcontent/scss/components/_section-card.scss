@@ -1,0 +1,25 @@
+.section-card {
+
+    &__issues-grid{
+        margin-top: 1em;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: auto;
+        gap: 0.5em;
+    }
+
+    &__issue-btn{
+        display: inline-block;
+    }
+
+
+    &__title-container{
+        background-color: $blue;
+        padding: 0.7em 1em;
+        border-radius: $defaultBorderRadius;
+    }
+
+    &__title {
+        color: white;
+    }
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details"
+        label="JDETAILS">
+        <field
+            name="type"
+            type="MessageType"
+            label="Тип"
+            addfieldprefix="Kima\Component\jnotify\Administrator\Field"
+            required="true" />
+
+        <field
+            name="material_id"
+            type="MaterialId"
+            label="Материал"
+            addfieldprefix="Kima\Component\jcontent\Administrator\Field\Modal" />
+
+        <field
+            showon="type:1"
+            name="custom_subject"
+            type="text"
+            label="Тема" />
+
+        <field
+            showon="type:1"
+            name="custom_message"
+            type="textarea"
+            label="Сообщение" />
+
+        <field
+            name="id"
+            type="hidden"
+            label="Id" />
+
+        <field
+            name="send_to_group"
+            type="list"
+            label="Параметры отправки">
+            <option value="0">Отправить пользователю</option>
+            <option value="1">Отправить группе пользователей</option>
+        </field>
+
+        <field
+            showon="send_to_group:1"
+            name="usergroup"
+            type="usergrouplist"
+            value="0"
+            label="Группа получателей"
+            addfieldprefix="Joomla\Component\Content\Administrator\Field"
+            required="true"
+        />
+
+        <field
+            showon="send_to_group:0"
+            name="user_id_to"
+            type="user"
+            label="Получатель"
+            addfieldprefix="Joomla\Component\Content\Administrator\Field"
+            validate="UserId"
+            required="true"
+        />
+    </fieldset>
+</form>

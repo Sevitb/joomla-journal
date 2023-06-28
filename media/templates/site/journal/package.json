@@ -1,0 +1,15 @@
+{
+  "name": "journal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/template.scss:css/template.css",
+    "sass-series": "sass --watch scss/pages/series-page/series-page.scss:css/series-page.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}

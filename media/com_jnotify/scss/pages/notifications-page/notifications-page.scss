@@ -1,0 +1,15 @@
+// Tools
+@import '../../tools/variables/variables';
+@import '../../tools/functions/functions';
+
+// Global in component
+@import '../global/_global';
+
+// Global on page
+@import 'global';
+
+// Components
+@import '../../components/notification-card';
+
+// Sections
+@import 'content-section.scss';

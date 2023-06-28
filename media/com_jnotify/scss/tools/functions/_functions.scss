@@ -1,0 +1,21 @@
+
+
+// Расчет REM
+@function remSize($baseFontSize, $pixelProperty){
+    @return calc($pixelProperty / $baseFontSize) + rem;
+}
+
+// Расчет EM
+@function emSize($baseFontSize, $pixelProperty){
+    @return calc($pixelProperty / $baseFontSize) + em;
+}
+
+// Адаптивная ширина
+@function adaptiveWidth($layoutWidth, $pixelWidth){
+    @return calc($pixelWidth * (100vw / $layoutWidth));
+}
+
+// Адаптивная высота
+@function adaptiveHeight($layoutHeight, $pixelHeight){
+    @return calc($pixelHeight * (100vh / $layoutHeight));
+}

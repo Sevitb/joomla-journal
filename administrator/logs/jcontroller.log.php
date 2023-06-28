@@ -1,0 +1,35 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2023-05-22 13:57:20 UTC
+#Software: Joomla! 4.2.3 Stable [ Uaminifu ] 27-September-2022 15:35 GMT
+
+#Fields: datetime	priority clientip	category	message
+2023-05-22T13:57:20+00:00	INFO 127.0.0.1	controller	Holding edit ID com_modules.edit.module.116 Array (     [0] => 116 ) 
+2023-05-22T13:57:22+00:00	INFO 127.0.0.1	controller	Holding edit ID com_modules.edit.module.115 Array (     [0] => 115 ) 
+2023-05-22T13:57:25+00:00	INFO 127.0.0.1	controller	Checking edit ID com_modules.edit.module.116: 0 Array (     [0] => 115 ) 
+2023-05-22T13:57:26+00:00	INFO 127.0.0.1	controller	Checking edit ID com_modules.edit.module.115: 1 Array (     [0] => 115 ) 
+2023-05-22T13:58:53+00:00	INFO 127.0.0.1	controller	Releasing edit ID com_modules.edit.module.115 Array ( ) 
+2023-05-22T13:59:17+00:00	INFO 127.0.0.1	controller	Holding edit ID com_modules.edit.module.116 Array (     [0] => 116 ) 
+2023-05-22T13:59:21+00:00	INFO 127.0.0.1	controller	Checking edit ID com_modules.edit.module.116: 1 Array (     [0] => 116 ) 
+2023-05-22T13:59:55+00:00	INFO 127.0.0.1	controller	Holding edit ID com_modules.edit.module.116 Array (     [0] => 116 ) 
+2023-05-22T13:59:59+00:00	INFO 127.0.0.1	controller	Checking edit ID com_modules.edit.module.116: 1 Array (     [0] => 116 ) 
+2023-05-22T14:00:33+00:00	INFO 127.0.0.1	controller	Releasing edit ID com_modules.edit.module.116 Array ( ) 
+2023-06-12T11:18:22+00:00	INFO 127.0.0.1	controller	Holding edit ID com_menus.edit.item.110 Array (     [0] => 110 ) 
+2023-06-12T11:18:23+00:00	INFO 127.0.0.1	controller	Holding edit ID com_menus.edit.item.119 Array (     [0] => 119 ) 
+2023-06-12T11:18:24+00:00	INFO 127.0.0.1	controller	Holding edit ID com_menus.edit.item.120 Array (     [0] => 120 ) 
+2023-06-12T11:18:25+00:00	INFO 127.0.0.1	controller	Holding edit ID com_menus.edit.item.113 Array (     [0] => 110     [1] => 113 ) 
+2023-06-12T11:18:26+00:00	INFO 127.0.0.1	controller	Holding edit ID com_menus.edit.item.114 Array (     [0] => 119     [1] => 114 ) 
+2023-06-12T11:18:27+00:00	INFO 127.0.0.1	controller	Holding edit ID com_menus.edit.item.115 Array (     [0] => 120     [1] => 115 ) 
+2023-06-12T11:18:28+00:00	INFO 127.0.0.1	controller	Holding edit ID com_menus.edit.item.116 Array (     [0] => 110     [1] => 113     [2] => 116 ) 
+2023-06-12T11:18:50+00:00	INFO 127.0.0.1	controller	Holding edit ID com_menus.edit.item.110 Array (     [0] => 119     [1] => 114     [2] => 110 ) 
+2023-06-12T11:18:58+00:00	INFO 127.0.0.1	controller	Holding edit ID com_menus.edit.item.119 Array (     [0] => 119     [1] => 114     [2] => 110 ) 
+2023-06-12T11:19:05+00:00	INFO 127.0.0.1	controller	Holding edit ID com_menus.edit.item.120 Array (     [0] => 119     [1] => 114     [2] => 110     [3] => 120 ) 
+2023-06-12T11:19:10+00:00	INFO 127.0.0.1	controller	Holding edit ID com_menus.edit.item.113 Array (     [0] => 119     [1] => 114     [2] => 110     [3] => 120     [4] => 113 ) 
+2023-06-12T11:19:17+00:00	INFO 127.0.0.1	controller	Holding edit ID com_menus.edit.item.114 Array (     [0] => 119     [1] => 114     [2] => 110     [3] => 120 ) 
+2023-06-12T11:19:22+00:00	INFO 127.0.0.1	controller	Holding edit ID com_menus.edit.item.115 Array (     [0] => 119     [1] => 114     [2] => 110     [3] => 120     [4] => 115 ) 
+2023-06-12T11:19:27+00:00	INFO 127.0.0.1	controller	Holding edit ID com_menus.edit.item.116 Array (     [0] => 119     [1] => 114     [2] => 110     [3] => 120     [4] => 115     [5] => 116 ) 
+2023-06-12T11:21:15+00:00	INFO 127.0.0.1	controller	Holding edit ID com_menus.edit.item.105 Array (     [0] => 119     [1] => 114     [2] => 110     [3] => 120     [4] => 115     [5] => 116     [6] => 105 ) 
+2023-06-12T11:21:39+00:00	INFO 127.0.0.1	controller	Releasing edit ID com_menus.edit.item.105 Array (     [0] => 119     [1] => 114     [2] => 110     [3] => 120     [4] => 115     [5] => 116 ) 
+2023-06-12T11:27:08+00:00	INFO 127.0.0.1	controller	Holding edit ID com_menus.edit.item.103 Array (     [0] => 119     [1] => 114     [2] => 110     [3] => 120     [4] => 115     [5] => 116     [6] => 103 ) 
+2023-06-12T11:27:20+00:00	INFO 127.0.0.1	controller	Holding edit ID com_menus.edit.item.103 Array (     [0] => 119     [1] => 114     [2] => 110     [3] => 120     [4] => 115     [5] => 116     [6] => 103 ) 
+2023-06-12T11:28:35+00:00	INFO 127.0.0.1	controller	Releasing edit ID com_menus.edit.item.103 Array (     [0] => 119     [1] => 114     [2] => 110     [3] => 120     [4] => 115     [5] => 116 ) 

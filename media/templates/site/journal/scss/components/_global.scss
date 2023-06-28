@@ -1,0 +1,78 @@
+body {
+    overflow-x: hidden;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: $black;
+    background-color: $extraLightBlue;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.main {
+    padding-top: $mainTagPadding;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: $mainTagPadding;
+    flex: 1 0 auto;
+    background-color: $extraLightBlue;
+}
+
+.default-block {
+    background-color: #fff;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 0.4em;
+}
+
+// Titles
+.h-1 {
+    @include adaptiveFont(1920, 55, 100, 100, 1, 600, $fontFamily: 'SF mono');
+}
+
+.h-2 {
+    @include adaptiveFont(1920, 34, 42, 42, 1, 400, $fontFamily: 'Helvetica');
+    margin-bottom: 0.6em;
+}
+
+.h-3 {
+    @include adaptiveFont(1920, 28, 34, 34, 1, 400, $fontFamily: 'Helvetica');
+}
+
+.h-4 {
+    @include adaptiveFont(1920, 22, 28, 28, 1, 400, $fontFamily: 'Helvetica');
+}
+
+.h-5{
+    @include adaptiveFont(1920, 18, 20, 20, 1.5, 600, $fontFamily: 'Helvetica');
+}
+
+.h-6{
+    @include adaptiveFont(1920, 16, 18, 18, 1.5, 400, $fontFamily: 'Helvetica');
+}
+
+.p {
+    line-height: 1.5;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.ul{
+    margin-bottom: 0.5em
+}
+
+.li{
+    line-height: 1.5;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+
+@media (max-width: $m){
+    .container{
+        max-width: 100%;
+    }
+}

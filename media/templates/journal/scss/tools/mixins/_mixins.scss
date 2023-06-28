@@ -1,0 +1,9 @@
+
+@mixin adaptiveFont($layoutWidth,$minSize, $maxSize, $preferredSize, $lineHeight: 1.5, $fontWeight: '', $fontStyle: '', $fontVariant: '', $fontFamily: ''){
+    // font: #{$fontStyle} #{$fontVariant} #{$fontWeight} clamp($minSize + rem, ($preferredSize *(100vw / 1700)), $maxSize + rem) $fontFamily;
+    font: #{$fontStyle} 
+    #{$fontVariant} 
+    #{$fontWeight} 
+    Max(calc($minSize/16) + rem, Min(($preferredSize * calc(100vw / $layoutWidth)), calc($maxSize/16) + rem)) / $lineHeight 
+    $fontFamily;
+}

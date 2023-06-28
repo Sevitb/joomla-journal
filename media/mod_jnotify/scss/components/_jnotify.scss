@@ -1,0 +1,90 @@
+.notification-bar{
+    position: relative;
+
+    &__count{
+        background-color: #DF5147;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        color: white;
+        height: 1em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        display: grid;
+        place-items: center;
+        z-index: 5;
+    }
+
+    &__icon{
+        cursor: pointer;
+        transform-origin: top;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &__icon.open{
+        transform: rotate(10deg);
+    }
+
+    &__count span{
+        font-size: 0.8rem;
+    }
+
+    &__modal{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        width: 19em;
+        display: none;
+    }
+
+    &__modal hr{
+        margin: 0.5em 0;
+    }
+
+    &__modal-header{
+        padding: 0.5rem 1rem 0rem;
+    }
+
+    &__modal-header a{
+        color: $black;
+    }
+
+    &__notification-list{
+        padding: 0;
+    }
+
+    &__notification{
+        cursor: pointer;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0.5rem;
+            margin: auto;
+            border-radius: 50%;
+            display: block;
+            aspect-ratio: 1;
+            background-color: $red;
+            width: 0.8rem;
+        }
+        a{
+            overflow: hidden;
+            width: 100%;
+            text-overflow: ellipsis;
+            padding: 0.5rem 1rem 0.5rem 1.8rem;
+        }
+    }
+}
+
+
+@media (max-width: 1200px){
+    .notification-bar__modal{
+        &__modal{
+            transform: translateX(50%);
+        }
+    }
+}

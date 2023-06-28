@@ -1,0 +1,6 @@
+.contact-info > * + *{
+    margin-top: 1em;
+}
+.contact-info__title{
+    margin-bottom: 0.2em;
+}

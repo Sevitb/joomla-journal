@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" client="site" method="upgrade">
+    <name>JUserList</name>
+    <creationDate>19.11.2022</creationDate>
+    <author>KIMA</author>
+    <authorEmail>peskovatzkov.vs@gmail.com</authorEmail>
+    <copyright>All rights recived</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>1.0</version>
+    <description>Модуль для вывода списка пользователей.</description>
+    <namespace path="src">Joomla\Module\JuserList</namespace>
+    <files>
+        <folder module="mod_juserlist">src</folder>
+        <filename>mod_juserlist.php</filename>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+        <filename>mod_juserlist.xml</filename>
+    </files>
+</extension>

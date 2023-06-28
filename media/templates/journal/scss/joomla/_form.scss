@@ -1,0 +1,57 @@
+.form{
+    &-vertical{
+    }
+
+    &-group{
+        margin: 0.7em 0;
+        &:last-child{
+            margin: 0;
+        }
+    }
+
+    &-control,&-select{
+        &:focus{
+            box-shadow: 1px 3px 9px -6px rgba(34, 60, 80, 0.2);
+        }
+        &-danger{
+            border-color: $red;
+            box-shadow: 1px 3px 9px -6px rgba($color: red, $alpha: 0.2);
+        }
+        &-feedback{
+            color: $red;
+            margin-left: 1em;
+        }
+    }
+    &-success{
+
+        &::before{
+            content: 'Спасибо за обратную связь, мы обязательно свяжемя с вами!';
+            color: $green;
+        }
+    }
+    &-error{
+        &::before{
+            content: 'Извините, что-то пошло не так... Пожалуйста, попробуйте позже.';
+            color: $red;
+        }
+    }
+}
+
+.control{
+    &-group{
+        margin: 0.7em 0;
+        &:last-child{
+            margin: 0;
+        }
+        &__row{
+            display: flex;
+            margin-bottom: 0.6em;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    &-label{
+        margin-bottom: 0.5em;
+    }
+}

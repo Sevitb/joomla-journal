@@ -1,0 +1,212 @@
+.jnav {
+
+    &__list,
+    &__sublist {
+        padding-left: 0;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        @supports not(gap: 1em) {
+            &>*+* {
+                margin-left: 1em;
+            }
+        }
+
+        &_vertical {
+            gap: 1em;
+
+            @supports not(gap: 1em) {
+                &>*+* {
+                    margin-top: 1em;
+                }
+            }
+
+            flex-direction: column;
+            align-items: flex-start;
+            &_default{
+                gap: 0;
+                align-items: flex-end;
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        &_sub {}
+    }
+
+    &__link {
+        padding: 0.2em 0.4em;
+        color: $black;
+
+        &_sublevel {
+            display: block;
+            color: white;
+            padding: 0.6em 0.8em;
+            width: 100%;
+
+            &:hover {
+                -webkit-filter: brightness(1.1);
+                filter: brightness(1.1);
+                color: white;
+            }
+
+            &_2 {
+                background-color: $blue;
+            }
+
+            &_3 {
+                background-color: $lightBlue;
+            }
+
+            &_4 {
+                background-color: $mediumLightBlue;
+            }
+        }
+    }
+
+    &__link-container {
+        display: flex;
+    }
+
+    &__dropdown-btn {
+        cursor: pointer;
+        display: block;
+        width: 25px;
+
+        flex: 1 1 auto;
+        color: white;
+        background-color: $blue;
+        position: relative;
+
+        &::before {
+            width: -webkit-max-content;
+            width: -moz-max-content;
+            width: max-content;
+            height: -webkit-max-content;
+            height: -moz-max-content;
+            height: max-content;
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        &.show {
+            &::before {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__sublist {
+        top: 100%;
+        right: 0;
+        position: absolute;
+        flex-direction: column;
+        background-color: burlywood;
+        overflow: hidden;
+        isolation: isolate;
+        display: none;
+        z-index: 99;
+
+        &.show {
+            display: flex;
+        }
+
+        &_level {
+            flex-direction: column;
+            position: relative;
+            display: none;
+
+            &.show {
+                display: flex;
+            }
+
+            &_3 {
+                z-index: 98;
+            }
+
+            &_4 {
+                z-index: 97;
+
+            }
+        }
+    }
+}
+
+@media (max-width: $m) {
+    .jnav {
+        z-index: 5000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-right: 1em;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        height: 100vh;
+        background-color: white;
+
+        &.open {
+            transform: translateX(0);
+        }
+
+        @supports (((-webkit-backdrop-filter: blur(15%)) or (backdrop-filter: blur(15%))) and ((-webkit-backdrop-filter: opacity(60%)) or (backdrop-filter: opacity(60%)))) {
+            -webkit-backdrop-filter: blur(15%);
+            backdrop-filter: blur(15%);
+            -webkit-backdrop-filter: opacity(20%);
+            backdrop-filter: opacity(20%);
+        }
+
+        &__item {
+            width: 25ch;
+        }
+
+        &__link {
+            transition: all 0.3s ease-in-out;
+            width: 100%;
+            padding-right: 2em;
+            padding-left: 2em;
+
+            &_sublevel {
+                padding: 0.6em 0.8em;
+            }
+            &:hover, &:focus{
+                background-color: #e9ecef;
+                color: $black;
+            }
+            &:active{
+                color: $blue;
+            }
+        }
+
+        &__list {
+            padding-top: 5em;
+            align-items: flex-end;
+            flex-direction: column;
+
+            &_vertical{
+                padding-top: 0;
+                align-items: flex-start;
+                &_default{
+                    align-items: flex-end;
+                }
+            }
+
+            @supports not(gap: 1em) {
+                &>*+* {
+                    margin-top: 1em;
+                }
+            }
+        }
+
+        &__sublist {
+            position: unset;
+        }
+    }
+}

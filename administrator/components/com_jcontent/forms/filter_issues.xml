@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+
+        <field
+            name="search"
+            type="text"
+            inputmode="search"
+            label="Поиск статей"
+            hint="JSEARCH_FILTER" />
+
+        <field
+            name="state"
+            type="list"
+            label="JSTATUS"
+            statuses="0,1">
+                <option value="">-- Выберите значение --</option>
+                <option value="1">Опубликовано</option>
+                <option value="0">Не опубликовано</option>
+                <option value="2">В архиве</option>
+        </field>
+
+    </fields>
+
+    <fields name="list">
+
+        <field
+            name="limit"
+            type="limitbox"
+            label="JGLOBAL_LIST_LIMIT"
+            onchange="this.form.submit();" />
+
+    </fields>
+</form>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" client="site" method="upgrade">
+    <name>Jmap</name>
+    <creationDate>11.11.2022</creationDate>
+    <author>KIMA</author>
+    <authorEmail>peskovatzkov.vs@gmail.com</authorEmail>
+    <copyright>All rights recived</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>1.0</version>
+    <description>Модуль для вывода карты.</description>
+    <namespace path="src">Joomla\Module\Jmap</namespace>
+    <files>
+        <filename module="mod_jmap">mod_jmap.php</filename>
+        <folder>tmpl</folder>
+        <filename>mod_jmap.xml</filename>
+    </files>
+    <media destination="mod_jmap" folder="media">
+		<folder>js</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+	</media>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="coords"
+                    type="text"
+                    label="Координаты"
+                />
+                <field
+                    name="zoom"
+                    type="text"
+                    label="Зум"
+                />
+                <field
+                    name="hover_text"
+                    type="text"
+                    label="Текст при наведении"
+                />
+                <field
+                    name="click_text"
+                    type="text"
+                    label="Текст при клике"
+                />
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    class="form-select"
+                    validate="moduleLayout"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

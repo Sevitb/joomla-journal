@@ -1,0 +1,79 @@
+.notification-bar{
+    position: relative;
+}
+
+.notification-bar__count{
+    background-color: #DF5147;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    color: white;
+    height: 1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    z-index: 5;
+}
+
+.notification-bar__icon{
+    cursor: pointer;
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+}
+
+.notification-bar__icon.open{
+    transform: rotate(10deg);
+}
+
+.notification-bar__count span{
+    font-size: 0.8rem;
+}
+
+.notification-bar__modal{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    min-width: 17em;
+    display: none;
+}
+
+.notification-bar__modal.open{
+    display: block;
+}
+
+.notification-bar__modal hr{
+    margin: 0.5em 0;
+}
+
+.notification-bar__modal-header{
+    padding: 0.5rem 1rem 0rem;
+}
+
+.notification-bar__modal-header a{
+    
+}
+
+.notification-bar__modal-body{
+    /* padding: 0 1em 0.8em 1em; */
+}
+
+.notification-bar__notification-list{
+    padding: 0;
+}
+
+.notification-bar__notification-list > * + *{
+    margin-top: 1em;
+}
+
+.notification-bar__notification{
+    cursor: pointer;
+}
+
+@media (max-width: 1200px){
+    .notification-bar__modal{
+        transform: translateX(50%);
+    }
+}

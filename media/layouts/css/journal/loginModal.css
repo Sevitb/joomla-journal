@@ -1,0 +1,16 @@
+.modal{
+
+}
+.modal__logo{
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+    margin-bottom: 1em;
+}
+.modal__svg-logo{
+    width: clamp(8em, 20.0208333333vw, 20em);
+    fill: #333;
+}
+.modal__title{
+    text-align: center;
+}
